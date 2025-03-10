@@ -1,4 +1,6 @@
-
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 
 
@@ -32,8 +34,10 @@ model = joblib.load(r'C:\Users\Asus\OneDrive\Desktop\Ml Bootcamp\models\model')
 model
 params = params[str(model)]
 params
+
 from sklearn.model_selection import GridSearchCV # use for hyperparameter
 import pandas as pd
+
 x_test=pd.read_csv(r"C:\Users\Asus\OneDrive\Desktop\Ml Bootcamp\data\preprocess_data\x_test.csv")
 x_train=pd.read_csv(r"C:\Users\Asus\OneDrive\Desktop\Ml Bootcamp\data\preprocess_data\x_train.csv")
 y_train=pd.read_csv(r"C:\Users\Asus\OneDrive\Desktop\Ml Bootcamp\data\preprocess_data\y_train.csv")
