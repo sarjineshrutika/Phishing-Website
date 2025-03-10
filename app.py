@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import numpy as np
 
-model= joblib.load(r'models/best_model')
+model= joblib.load('best_model')
 
 st.header('Phishing Website  Prediction App')
 
